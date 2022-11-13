@@ -1,10 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RotatorChangeState : MonoBehaviour
 {
     [SerializeField] private List<Rotator> _rotators = new List<Rotator>();
+
+    [SerializeField] private TimeScaleChanger _timeScaleChanger;
 
     [SerializeField] private Progress _progress;
     [SerializeField] private LineDrawer _line;
@@ -24,6 +25,7 @@ public class RotatorChangeState : MonoBehaviour
     private void OnPaused()
     {
         Time.timeScale = 0;
+        _timeScaleChanger.DisableButton();
 
         foreach (var rotate in _rotators)
         {
@@ -37,5 +39,8 @@ public class RotatorChangeState : MonoBehaviour
         {
             rotate.DisableHelp();
         }
+
+        Time.timeScale = 1;
+        _timeScaleChanger.DisableButton();
     }
 }

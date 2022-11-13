@@ -43,7 +43,7 @@ public class Sound : MonoBehaviour
 
     private void MuteSound()
     {
-        if (_isMute)
+        if (_isMute == false)
         {
             _soundImage.sprite = _soundOn;
             AudioListener.pause = false;

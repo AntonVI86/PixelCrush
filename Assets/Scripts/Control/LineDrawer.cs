@@ -101,7 +101,6 @@ public class LineDrawer : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         _progress.GetIsCanDraw();
         Pressed?.Invoke();
         _container = null;
-        Time.timeScale = 1;
     }
 
     public void OnPointerDown(PointerEventData eventData)

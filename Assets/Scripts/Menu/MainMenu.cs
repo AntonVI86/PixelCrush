@@ -41,12 +41,7 @@ public class MainMenu : MonoBehaviour
 
     private void ResetGame()
     {
-        int capacity = 15;
-        int score = 0;
-
-        PlayerPrefs.SetInt(TotalScore, score);
-        PlayerPrefs.SetInt(ItemAmount, capacity);
-        PlayerPrefs.SetString(LevelName, StartLevel);
+        PlayerPrefs.DeleteAll();
 
         _reseter.Reset();
     }

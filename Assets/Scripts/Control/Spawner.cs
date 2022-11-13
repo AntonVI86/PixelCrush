@@ -97,6 +97,11 @@ public class Spawner : ObjectPool
         PlayerPrefs.SetInt(ItemAmount, Capacity + 1);
     }
 
+    public void AddCapacity()
+    {
+        PlayerPrefs.SetInt(ItemAmount, Capacity + 1);
+    }
+
     public void OnItemDestroyed(Item item)
     {
         _itemInWave++;
@@ -117,7 +122,7 @@ public class Spawner : ObjectPool
 
     private int GetCapacity()
     {
-        Capacity = 15;
+        Capacity = 8;
 
         if (Capacity < PlayerPrefs.GetInt(ItemAmount))
         {

@@ -10,9 +10,6 @@ using UnityEngine.UI;
 
 public class Ads : MonoBehaviour
 {
-    public event UnityAction Rewarded;
-
-
     private void Awake()
     {
         YandexGamesSdk.CallbackLogging = true;
@@ -35,7 +32,6 @@ public class Ads : MonoBehaviour
     public void OnShowVideoButtonClick()
     {
         VideoAd.Show();
-        Rewarded?.Invoke();
     }
 
     public void OnAuthorizeButtonClick()

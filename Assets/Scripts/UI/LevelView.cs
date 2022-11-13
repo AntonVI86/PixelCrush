@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class LevelView : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class LevelView : MonoBehaviour
 
     private void Start()
     {
+        _levelNumber.text = (SceneManager.GetActiveScene().buildIndex).ToString();
         _level.DOFade(0, _duration).OnComplete(() => gameObject.SetActive(false));
         _levelNumber.DOFade(0, _duration).OnComplete(() => gameObject.SetActive(false));
     }
