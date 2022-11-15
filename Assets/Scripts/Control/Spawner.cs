@@ -21,7 +21,7 @@ public class Spawner : ObjectPool
 
     private Coroutine _coroutine;
 
-    private void Awake()
+    private void OnEnable()
     {
         AddObjectToSpawner();
         GetCapacity();

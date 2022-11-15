@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 52cd86fb81e246c4e96fd2567482e57e
+guid: 25d4bc06bffd8cc41870e07efe50363c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -115,27 +115,27 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 2
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Forms_0
+      name: Forms 1_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 256
-        height: 328
+        width: 2477
+        height: 3263
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,155 +143,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54c5d8036c56f044999df975dd685859
-      internalID: 155646151
+      spriteID: 4f0c1793b0b7a734fa7e3c165cbd7e41
+      internalID: -1376385831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_1
+      name: Forms 1_1
       rect:
         serializedVersion: 2
-        x: 275
+        x: 2477
         y: 0
-        width: 279
-        height: 328
+        width: 2753
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49f577bd5049f441aaa81e53a008c63
-      internalID: 1992473119
+      spriteID: 97dfedb24b2a40741a6208b2729e3554
+      internalID: -238418453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_2
+      name: Forms 1_2
       rect:
         serializedVersion: 2
-        x: 564
+        x: 5225
         y: 0
-        width: 295
-        height: 328
+        width: 2962
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c3d771209e40240959cbc0849334fd
-      internalID: 412221948
+      spriteID: 06143e3ab3639914ca8ac018f8b4b9e4
+      internalID: 734176920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_3
+      name: Forms 1_3
       rect:
         serializedVersion: 2
-        x: 867
+        x: 8187
         y: 0
-        width: 295
-        height: 328
+        width: 2946
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc6c8341755067a438d123fcaf47b6dd
-      internalID: 615529190
+      spriteID: c8026da12ebd4cf4d89102e1c6a09993
+      internalID: 1294712195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_4
+      name: Forms 1_4
       rect:
         serializedVersion: 2
-        x: 1171
+        x: 11139
         y: 0
-        width: 309
-        height: 328
+        width: 3081
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcbf3e1083834f44d99ab15e955ea9ac
-      internalID: -743510841
+      spriteID: be05d2d9bcfa0404c9edf1feffc1dfae
+      internalID: -719341097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_5
+      name: Forms 1_5
       rect:
         serializedVersion: 2
-        x: 1484
+        x: 14231
         y: 0
-        width: 350
-        height: 328
+        width: 3551
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb9e69070eb38154e872d4735859c073
-      internalID: 1412504197
+      spriteID: bc7569ac39de77a4ca4bec1a00589ba6
+      internalID: -2075812096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_6
+      name: Forms 1_6
       rect:
         serializedVersion: 2
-        x: 1836
+        x: 17785
         y: 0
-        width: 305
-        height: 328
+        width: 3104
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 909cb4bf8044a854ab56c1d3f1b18c8a
-      internalID: -1874498536
+      spriteID: 7d0a39b31002bc247a7beb03b915248c
+      internalID: 34927130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forms_7
+      name: Forms 1_7
       rect:
         serializedVersion: 2
-        x: 2141
+        x: 21058
         y: 0
-        width: 354
-        height: 328
+        width: 3524
+        height: 3263
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68a7892bcff3f2d4180361ebf28ce6c5
-      internalID: -1580191712
+      spriteID: 07b359f0de1ecd94b80b4d3855e3725e
+      internalID: -1753417889
       vertices: []
       indices: 
       edges: []
@@ -307,14 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Forms_2: 412221948
-      Forms_6: -1874498536
-      Forms_0: 155646151
-      Forms_7: -1580191712
-      Forms_5: 1412504197
-      Forms_4: -743510841
-      Forms_1: 1992473119
-      Forms_3: 615529190
+      Forms 1_2: 734176920
+      Forms 1_4: -719341097
+      Forms 1_6: 34927130
+      Forms 1_7: -1753417889
+      Forms 1_1: -238418453
+      Forms 1_0: -1376385831
+      Forms 1_3: 1294712195
+      Forms 1_5: -2075812096
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

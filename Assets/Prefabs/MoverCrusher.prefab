@@ -130,6 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 7668781850476039309}
+  _rigidbody: {fileID: 3319426290145185709}
+  _duration: 3
 --- !u!1 &3553926262731254309
 GameObject:
   m_ObjectHideFlags: 0

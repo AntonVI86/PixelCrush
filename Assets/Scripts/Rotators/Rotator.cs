@@ -52,7 +52,7 @@ public class Rotator : MonoBehaviour
         {
             _rigidbody.MoveRotation(_rigidbody.rotation + _speed * Time.fixedDeltaTime);
 
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
     }
 }

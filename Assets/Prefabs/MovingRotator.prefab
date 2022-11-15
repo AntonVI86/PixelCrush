@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 6244603520147081298}
+  _rigidbody: {fileID: 2142179547918568246}
+  _duration: 3
 --- !u!1 &3710532025703724431
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6244603520147081298}
   m_Layer: 0
-  m_Name: Target
+  m_Name: Point_1
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
