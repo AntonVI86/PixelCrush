@@ -1,7 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class DrawingRadius : MonoBehaviour
+public class RadiusDrawer : MonoBehaviour
 {
     [SerializeField] private Rotator _rotator;
     [SerializeField] private SpriteRenderer _renderer;

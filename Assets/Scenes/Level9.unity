@@ -1034,7 +1034,7 @@ MonoBehaviour:
   _spawnPoints:
   - {fileID: 2008949318}
   - {fileID: 792443932}
-  _coinPrefab:
+  _coinPrefabs:
   - {fileID: 8678651781859941703, guid: 539c0cdb20e11514083780075ec0e796, type: 3}
   - {fileID: 9067533458947255012, guid: 16a51b361cdea3c4cb621408feb908d2, type: 3}
   - {fileID: 1615590389061739658, guid: f5fff139054e622419ebffd4a3b1a5ec, type: 3}

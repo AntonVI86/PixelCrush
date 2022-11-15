@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatorChangeState : MonoBehaviour
+public class RotatorHelpActivator : MonoBehaviour
 {
     [SerializeField] private List<Rotator> _rotators = new List<Rotator>();
 

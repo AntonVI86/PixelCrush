@@ -27,14 +27,17 @@ public class GameOver : MonoBehaviour
 
     private void OnWin()
     {
-        _winPanel.SetActive(true);
-        _progress.GetIsCanDraw();
-        Time.timeScale = 0;
+        ActivatePanel(_winPanel);
     }
 
     private void OnLost()
     {
-        _lostPanel.SetActive(true);
+        ActivatePanel(_lostPanel);
+    }
+
+    private void ActivatePanel(GameObject panel)
+    {
+        panel.SetActive(true);
         _progress.GetIsCanDraw();
         Time.timeScale = 0;
     }

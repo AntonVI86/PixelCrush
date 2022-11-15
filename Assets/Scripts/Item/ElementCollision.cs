@@ -28,20 +28,18 @@ public class ElementCollision : MonoBehaviour
     {
         if (_hasRigidbody == false)
         {
-            if (collision.gameObject.TryGetComponent(out DrawingLine line))
+            if (collision.gameObject.TryGetComponent(out DrawingLinePlayer line))
             {
                 AddRigidbody(line);
-            }
-        }      
+            }             
 
-        if (_hasRigidbody == false)
-        {
             if (collision.gameObject.TryGetComponent(out Shredder shredder))
             {
                 _particle.SetActive(true);
                 StartCoroutine(DestroyElement());
             }
         }
+
         if (_hasRigidbody)
         {
             if (collision.gameObject.TryGetComponent(out Shredder shredder))
@@ -59,14 +57,16 @@ public class ElementCollision : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void AddRigidbody(DrawingLine line)
+    private void AddRigidbody(DrawingLinePlayer line)
     {
+        float force = 0.3f;
+
         _rigidbody = gameObject.AddComponent<Rigidbody2D>();
 
         _rigidbody.mass = 0.1f;
         Vector3 direction = Vector3.Cross(transform.position - line.transform.position, new Vector3(0, 0, -1f));
 
-        _rigidbody.AddForce(direction * 0.3f, ForceMode2D.Impulse);
+        _rigidbody.AddForce(direction * force, ForceMode2D.Impulse);
 
         gameObject.layer = _freeElementLayerNumber;
 

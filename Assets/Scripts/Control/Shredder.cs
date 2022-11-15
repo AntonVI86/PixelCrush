@@ -6,7 +6,7 @@ using UnityEngine;
 public class Shredder : ObjectPool
 {
     [SerializeField] private Transform[] _spawnPoints;
-    [SerializeField] private List<GameObject> _coinPrefab;
+    [SerializeField] private List<GameObject> _coinPrefabs;
 
     [SerializeField] private Progress _progress;
 
@@ -21,7 +21,7 @@ public class Shredder : ObjectPool
     }
     private void Start()
     {
-        Initialize(_coinPrefab);
+        Initialize(_coinPrefabs);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

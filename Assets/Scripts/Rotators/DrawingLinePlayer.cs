@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class DrawingLine : MonoBehaviour
+public class DrawingLinePlayer : MonoBehaviour
 {
     [SerializeField] private AudioClip _crush;
 

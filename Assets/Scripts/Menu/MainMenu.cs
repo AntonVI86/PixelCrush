@@ -9,8 +9,6 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private ReseterItems _reseter;
 
-    public const string TotalScore = "TotalScore";
-    public const string ItemAmount = "ItemAmount";
     public const string LevelName = "LevelName";
     public const string StartLevel = "Level1";
 

@@ -48,11 +48,13 @@ public class Rotator : MonoBehaviour
 
     private IEnumerator Rotate()
     {
+        var delay = new WaitForFixedUpdate();
+
         while (true)
         {
             _rigidbody.MoveRotation(_rigidbody.rotation + _speed * Time.fixedDeltaTime);
 
-            yield return new WaitForFixedUpdate();
+            yield return delay;
         }
     }
 }

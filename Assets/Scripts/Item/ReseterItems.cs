@@ -25,7 +25,9 @@ public class ReseterItems : MonoBehaviour
 
     public void Reset()
     {
-        for (int i = 2; i < _items.Count; i++)
+        int firstNonDefaultItemIndex = 2;
+
+        for (int i = firstNonDefaultItemIndex; i < _items.Count; i++)
         {
             _items[i].SetBlock();
         }

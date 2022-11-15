@@ -19,11 +19,14 @@ public class CardView : MonoBehaviour
 
     private Animator _animator;
     private AudioSource _audioSource;
+    private RectTransform _cardTransform;
 
     public Item Item => _item;
+    public RectTransform CardTransform => _cardTransform;
 
     private void Awake()
     {
+        _cardTransform = GetComponent<RectTransform>();
         _audioSource = GetComponent<AudioSource>();
         _animator = GetComponent<Animator>();
         _lineRotator.Stop();
