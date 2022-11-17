@@ -14,7 +14,16 @@ public class TotalScoreDisplayer : MonoBehaviour
         _scoreText = GetComponent<TMP_Text>();
     }
     private void Start()
-    {       
+    {
+        Leaderboard.GetPlayerEntry("PixelCrushBoard", (result) =>
+        {
+            if (result == null)
+                Debug.Log("Player is not present in the leaderboard.");
+            else
+                Debug.Log($"My rank = {result.rank}, score = {result.score}");
+        });
+
+        Leaderboard.SetScore("PixelCrushBoard", Random.Range(1, 100));
         _scoreText.text = _scoreSaver.GetScore().ToString();
     }
 }

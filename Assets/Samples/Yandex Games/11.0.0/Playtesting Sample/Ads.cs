@@ -57,12 +57,12 @@ public class Ads : MonoBehaviour
 
     public void OnSetLeaderboardScoreButtonClick()
     {
-        Leaderboard.SetScore("PlaytestBoard", Random.Range(1, 100));
+        Leaderboard.SetScore("PixelCrushBoard", Random.Range(1, 100));
     }
 
     public void OnGetLeaderboardEntriesButtonClick()
     {
-        Leaderboard.GetEntries("PlaytestBoard", (result) =>
+        Leaderboard.GetEntries("PixelCrushBoard", (result) =>
         {
             Debug.Log($"My rank = {result.userRank}");
             foreach (var entry in result.entries)
@@ -77,7 +77,7 @@ public class Ads : MonoBehaviour
 
     public void OnGetLeaderboardPlayerEntryButtonClick()
     {
-        Leaderboard.GetPlayerEntry("PlaytestBoard", (result) =>
+        Leaderboard.GetPlayerEntry("PixelCrushBoard", (result) =>
         {
             if (result == null)
                 Debug.Log("Player is not present in the leaderboard.");

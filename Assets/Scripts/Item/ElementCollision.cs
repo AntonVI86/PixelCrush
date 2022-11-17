@@ -64,6 +64,7 @@ public class ElementCollision : MonoBehaviour
         _rigidbody = gameObject.AddComponent<Rigidbody2D>();
 
         _rigidbody.mass = 0.1f;
+        
         Vector3 direction = Vector3.Cross(transform.position - line.transform.position, new Vector3(0, 0, -1f));
 
         _rigidbody.AddForce(direction * force, ForceMode2D.Impulse);

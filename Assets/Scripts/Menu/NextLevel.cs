@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Agava.YandexGames;
+using System.Collections;
 
 [RequireComponent(typeof(Button))]
 public class NextLevel : MonoBehaviour
@@ -10,6 +12,11 @@ public class NextLevel : MonoBehaviour
     private void Awake()
     {
         _nextLevel = GetComponent<Button>();
+    }
+
+    private IEnumerator Start()
+    {
+        yield return YandexGamesSdk.Initialize();
     }
 
     private void OnEnable()

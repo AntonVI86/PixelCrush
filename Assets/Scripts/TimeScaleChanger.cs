@@ -33,7 +33,7 @@ public class TimeScaleChanger : MonoBehaviour
 
     private void Limit()
     {
-        int maxTimeValue = 3;
+        int maxTimeValue = 2;
 
         if (Time.timeScale < maxTimeValue)
         {
